@@ -1,5 +1,6 @@
-# diasDaSemana
 Campanha em colaboraçom com A Mesa na qual fomentamos a utilizaçom dos dias da semana por feiras.
+
+Aqui podes atopar recursos para incluir o logo da campanha no teu blogue
 
 # Wordpress
 Editar os ficheiros header.php e style.css do tema.

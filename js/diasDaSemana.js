@@ -1,12 +1,11 @@
-<script type="text/javascript"><!--
-
 /* Devolve a imagem a mostrar */
-function getDiaDaSemanaImg(){
+function getDiaDaSemana(){
+  console.log("getDiaDaSemanaImg");
   /* Textos a mostrar */
   var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'agosto', 'outubro', 'novembro', 'dezembro');
   var feira = new Array('Domingo', 'Segunda feira', 'Terça feira', 'Quarta feira', 'Quinta feira', 'Sexta feira', 'Sábado');
 
-  var path = "/wp-content/uploads/2017/10/_" /* path da imagem */
+  var path = "img/" /* path da imagem */
   var polvo = "polvo_violeta" /* raiz do nome da imagem */
 
   var currentdate = new Date(); /* obtemos a informaçom do dia de hoje */
@@ -23,8 +22,12 @@ function getDiaDaSemanaImg(){
   }
 
   this.feira = feira[diaDende0]; /* Domingo, Segunda feira, ... */
-  this.mes = currentdate.getDate() + 'de' + mes[currentdate.getMoth()]; /* 22 de fevereiro */
-  this.img = path+polvo+ext;
+  this.mes = currentdate.getDate() + ' de ' + mes[currentdate.getMonth()]; /* 22 de fevereiro */
   return this;
 }
-//--></script>
+function setInfo(){
+  meuPolvo=getDiaDaSemana();
+  $("#feira").html(meuPolvo.feira);
+  $("#mes").html(meuPolvo.mes);
+  $("#polvo").attr("src",meuPolvo.img);
+}
