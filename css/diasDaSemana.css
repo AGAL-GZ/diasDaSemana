@@ -1,1 +1,26 @@
-.diasDaSemana { display:block; margin: 10px auto; width: 480px}
+.diaDaSemana{
+  position: relative;
+  top: 0px;
+  width: 200px;
+  right: 0px;
+}
+.DDSpolvo{
+    width: 150px;
+}
+.DDStexto {
+   position: relative;
+   top: -30px;
+   width: 100%;
+}
+.DDSfeira {
+   color: #e23e83;
+   font: bold 14px/25px HelveNeuBlaCon, Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   padding: 10px;
+}
+.DDSmes {
+   color: #8b0067;
+   font: bold 14px/25px HelveNeuBlaCon, Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   padding: 10px;
+}
