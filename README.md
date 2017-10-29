@@ -2,7 +2,7 @@ Campanha em colaboraçom com A Mesa na qual fomentamos a utilizaçom dos dias da
 
 Aqui podes atopar recursos para incluir o logo da campanha no teu blogue
 
-# HTML/js/css
+# html/js/css
 Podes incluir o polvo dinámico num simples <div></div> em qualquer página HTML.
 
 Para elo, engade:
@@ -26,7 +26,7 @@ Para elo, engade:
 function getDiaDaSemana(){
   console.log("getDiaDaSemanaImg");
   /* Textos a mostrar */
-  var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'agosto', 'outubro', 'novembro', 'dezembro');
+  var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro');
   var feira = new Array('Domingo', 'Segunda feira', 'Terça feira', 'Quarta feira', 'Quinta feira', 'Sexta feira', 'Sábado');
 
   var path = "img/" /* path da imagem */
