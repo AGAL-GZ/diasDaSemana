@@ -3,7 +3,7 @@ function getDiaDaSemana(){
   console.log("getDiaDaSemanaImg");
   /* Textos a mostrar */
   var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro');
-  var feira = new Array('Domingo', 'Segunda feira', 'Terça feira', 'Quarta feira', 'Quinta feira', 'Sexta feira', 'Sábado');
+  var feira = new Array('Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado');
 
   var path = "img/" /* path da imagem */
   var polvo = "polvo_violeta" /* raiz do nome da imagem */
@@ -26,8 +26,8 @@ function getDiaDaSemana(){
   return this;
 }
 function setInfo(){
-  meuPolvo=getDiaDaSemana();
-  $("#feira").html(meuPolvo.feira);
-  $("#mes").html(meuPolvo.mes);
-  $("#polvo").attr("src",meuPolvo.img);
+  diaDaSemana=getDiaDaSemana();
+  $("#feira").html(diaDaSemana.feira);
+  $("#mes").html(diaDaSemana.mes);
+  $("#polvo").attr("src",diaDaSemana.img);
 }
