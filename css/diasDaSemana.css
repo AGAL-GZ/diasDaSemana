@@ -1,26 +1,29 @@
 .diaDaSemana{
   position: relative;
+  margin: auto;
   top: 0px;
   width: 200px;
   right: 0px;
 }
 .DDSpolvo{
-    width: 150px;
+    width: 100%;
 }
-.DDStexto {
+.DDStextos {
    position: relative;
-   top: -30px;
+   top: 0px;
    width: 100%;
+   text-align: center;
 }
 .DDSfeira {
    color: #e23e83;
    font: bold 14px/25px HelveNeuBlaCon, Helvetica, Sans-Serif;
    letter-spacing: -1px;
-   padding: 10px;
+   padding-left: 5px;
+   padding-right: 5px;
 }
 .DDSmes {
    color: #8b0067;
    font: bold 14px/25px HelveNeuBlaCon, Helvetica, Sans-Serif;
    letter-spacing: -1px;
-   padding: 10px;
+   padding-right: 5px;
 }
