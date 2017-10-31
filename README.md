@@ -1,12 +1,12 @@
-Campanha em colaboraçom com A Mesa na qual fomentamos a utilizaçom dos dias da semana por feiras.
+Campanha em colaboraçom com A Mesa na qual encorajamos as pessoas galegas a utilizarem os dias da semana por feiras.
 
-Aqui podes atopar recursos para incluir o logo da campanha no teu blogue
+Aqui podes encontrar recursos para incluir o logo da campanha no teu blogue.
 
 # html/js/css
 Podes incluir o polvo dinámico num simples <div></div> em qualquer página HTML.
 
-Para elo, engade:
-* O código HTML na tua página:
+Para isso, acrescenta:
+* O seguinte código HTML na tua página:
 ```html
 <div class="diaDaSemana">
     <img class="DDSpolvo" id="polvo" height="150"/>
@@ -18,9 +18,9 @@ Para elo, engade:
 ```
 
 * O javascript:
-  * Modifica as cadeas de texto para os meses/dias segum a tua norma
-  * Modifica a variable path para adecua-la a onde tu subas as imagens
-  * Se modificas o nome da imagem, modifica a variable polvo
+  * Modifica as cadeias de carateres para os meses/dias segundo a tua norma
+  * Modifica a variável path para adecuá-la ao lugar onde tu subas as imagens
+  * Se modificas o nome da imagem, modifica a variável polvo
 ```javascript
 /* Obtemos um objeto com a image, o dia e o mês a mostrar */
 function getDiaDaSemana(){
@@ -45,12 +45,12 @@ function getDiaDaSemana(){
     case 6: this.img=path+polvo+'_s.png';break;
   }
 
-  this.feira = feira[diaDende0]; /* Domingo, Segunda feira, ... */
+  this.feira = feira[diaDende0]; /* Domingo, Segunda-feira, ... */
   this.mes = currentdate.getDate() + ' de ' + mes[currentdate.getMonth()]; /* 22 de fevereiro */
   return this;
 }
 
-/* Modifica o HTML com o obtindo segum o dia */
+/* Modifica o HTML com o obtido segundo o dia */
 function setDiaDaSemana(){
   diaDaSemana=getDiaDaSemana();
   $("#feira").html(diaDaSemana.feira);
@@ -92,9 +92,9 @@ function setDiaDaSemana(){
 }
 ```
 
-* Sube as imagens png de img/ a algum sítio do teu servidor.
+* Sobe as imagens png de img/ a algum sítio do teu servidor.
 
-Simplesmente lembra de chamar na tua inicializaçom da página à funçom diaDaSemana()
+Simplesmente lembra-te de chamar na tua inicializaçom da página a funçom diaDaSemana()
 
 
 Podes ver um exemplo do funcionamento em http://dias.pgl.gal
@@ -102,7 +102,7 @@ Podes ver um exemplo do funcionamento em http://dias.pgl.gal
 
 # Wordpress com widgets
 
-Para engadir um widget com este código:
+Para adicionarmos um widget com este código:
 * Subimos as imagens a uma biblioteca de média.
 
 * Colamos num widget do tipo HTML o seguinte código
@@ -148,7 +148,7 @@ Para engadir um widget com este código:
 </style>
 <script type="text/javascript">
 //<![CDATA[
-/* Devolve a imagem a mostrar */
+/* Retorna a imagem a mostrar */
 function getDiaDaSemana(){
   console.log("getDiaDaSemanaImg");
   /* Textos a mostrar */
@@ -183,7 +183,7 @@ document.getElementById('feira').innerHTML = diaDaSemana.feira;
 </script>
 ```
 
-# Informaçom sobre o questons de estilo
+# Informaçom sobre as questons de estilo
 
 ## Fonte
 - Fonte: HelveNeuBlaCon
