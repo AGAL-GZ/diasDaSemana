@@ -17,9 +17,9 @@ Para isso, acrescenta:
 </div>
 ```
 
-* O javascript:
-  * Modifica as cadeias de carateres para os nomes de meses/dias consoante a tua preferência de norma (AGAL, RAG/ILG)
-  * Modifica a variável path para adecuá-la ao lugar onde tu subas as imagens
+* O seguinte código javascript:
+  * Modificando as cadeias de carateres para os nomes de meses/dias consoante a tua preferência de norma (AGAL, RAG/ILG)
+  * Modificando a variável path para adecuá-la ao lugar onde tu subas as imagens
   * Se modificas o nome da imagem, modifica a variável polvo
 ```javascript
 /* Obtemos um objeto com a image, o dia e o mês a mostrar */
