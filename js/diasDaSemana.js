@@ -1,4 +1,4 @@
-/* Devolve a imagem a mostrar */
+/* Retorna a imagem a mostrar */
 function getDiaDaSemana(){
   console.log("getDiaDaSemanaImg");
   /* Textos a mostrar */
