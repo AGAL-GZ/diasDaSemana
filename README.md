@@ -3,7 +3,7 @@ Campanha em colaboraçom com A Mesa na qual encorajamos as pessoas galegas a uti
 Aqui podes encontrar recursos para incluir o logo da campanha no teu blogue.
 
 # html/js/css
-Podes incluir o polvo dinámico num simples "<div></div>" em qualquer página HTML.
+Podes incluir o polvo dinámico num simples '<div></div>' em qualquer página HTML.
 
 Para isso, acrescenta:
 * O seguinte código HTML na tua página:
