@@ -9,7 +9,7 @@ Para isso, acrescenta:
 * O seguinte código HTML na tua página:
 ```html
 <div class="diaDaSemana">
-    <img class="DDSpolvo" id="polvo" height="150"/>
+    <img class="DDSpolvo" id="polvo"/>
     <div class="DDStextos">
         <span class="DDSfeira" id="feira"></span>
         <span class="DDSmes" id="mes"></span>
@@ -94,7 +94,7 @@ function setDiaDaSemana(){
 
 * Sobe as imagens png de img/ a algum sítio do teu servidor.
 
-Simplesmente lembra-te de chamar na tua inicializaçom da página a funçom diaDaSemana()
+Simplesmente lembra-te de chamar na tua inicializaçom da página a funçom setDiaDaSemana()
 
 
 Podes ver um exemplo do funcionamento em http://dias.pgl.gal
@@ -109,7 +109,7 @@ Para adicionarmos um widget com este código:
 
 ```html
 <div class="diaDaSemana">
-    <img class="DDSpolvo" id="polvo" height="150"/>
+    <img class="DDSpolvo" id="polvo"/>
     <div class="DDStextos">
         <span class="DDSfeira" id="feira"></span>
         <span class="DDSmes" id="mes"></span>
