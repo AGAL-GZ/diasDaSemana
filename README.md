@@ -26,7 +26,6 @@ Para isso, acrescenta:
 ```javascript
 /* Obtemos um objeto com a image, o dia e o mês a mostrar */
 function getDiaDaSemana(){
-  console.log("getDiaDaSemanaImg");
   /* Textos a mostrar */
   var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro');
   var feira = new Array('Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado');
@@ -77,6 +76,7 @@ function setDiaDaSemana(){
    position: relative;
    top: 0px;
    width: 100%;
+   text-align: center;
 }
 .DDSfeira {
    color: #e23e83;
@@ -134,6 +134,7 @@ Para adicionarmos um widget com este código:
    position: relative;
    top: 0px;
    width: 100%;
+   text-align: center;
 }
 .DDSfeira {
    color: #e23e83;
@@ -154,7 +155,6 @@ Para adicionarmos um widget com este código:
 //<![CDATA[
 /* Retorna a imagem a mostrar */
 function getDiaDaSemana(){
-  console.log("getDiaDaSemanaImg");
   /* Textos a mostrar */
   var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro');
   var feira = new Array('Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado');
@@ -185,6 +185,21 @@ document.getElementById('mes').innerHTML = diaDaSemana.mes;
 document.getElementById('feira').innerHTML = diaDaSemana.feira;
 //]]>
 </script>
+```
+
+# iframe
+
+A alternativa mais simples é utilizar um iframe.
+
+Simplesmente cola na tua página o código:
+
+```html
+<iframe src="http://dias.pgl.gal/feiramos.html?ilga" width="210px" height="210px" frameborder="0" scrolling="no"></iframe>
+```
+ou bem se queres que os textos no banner (dia/mês) seja norma AGAL:
+
+```html
+<iframe src="http://dias.pgl.gal/feiramos.html?agal" width="210px" height="210px" frameborder="0" scrolling="no"></iframe>
 ```
 
 # Informaçom sobre as questons de estilo
