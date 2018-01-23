@@ -9,7 +9,9 @@ Para isso, acrescenta:
 * O seguinte código HTML na tua página:
 ```html
 <div class="diaDaSemana">
-    <img class="DDSpolvo" id="polvo"/>
+    <a href="http://feiramos.gal" target="_blank">
+        <img class="DDSpolvo" id="polvo"/>
+    </a>
     <div class="DDStextos">
         <span class="DDSfeira" id="feira"></span>
         <span class="DDSmes" id="mes"></span>
@@ -109,7 +111,9 @@ Para adicionarmos um widget com este código:
 
 ```html
 <div class="diaDaSemana">
-    <img class="DDSpolvo" id="polvo"/>
+    <a href="http://feiramos.gal" target="_blank">
+        <img class="DDSpolvo" id="polvo"/>
+    </a>
     <div class="DDStextos">
         <span class="DDSfeira" id="feira"></span>
         <span class="DDSmes" id="mes"></span>
