@@ -58,7 +58,7 @@ function getDiaDaSemana(norma){
 
 /* Modifica o HTML com o obtido segundo o dia */
 function setDiaDaSemana(){
-  diaDaSemana=getDiaDaSemana('ilga');
+  diaDaSemana=getDiaDaSemana('ilga'); // chamar com 'agal' para receber os textos em norma agal
   $("#feira").html(diaDaSemana.feira);
   $("#mes").html(diaDaSemana.mes);
   $("#polvo").attr("src",diaDaSemana.img);
@@ -159,7 +159,7 @@ Para adicionarmos um widget com este código:
 <script type="text/javascript">
 //<![CDATA[
 /* Retorna a imagem a mostrar */
-function getDiaDaSemana(){
+function getDiaDaSemana(norma){
   /* Textos a mostrar */
   if (norma==='agal'){
     var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro');
@@ -189,7 +189,7 @@ function getDiaDaSemana(){
   this.mes = currentdate.getDate() + ' de ' + mes[currentdate.getMonth()]; /* 22 de fevereiro */
   return this;
 }
-diaDaSemana=getDiaDaSemana('ilga');
+diaDaSemana=getDiaDaSemana('ilga'); // chamar com 'agal' para receber os textos em norma agal
 document.getElementById('polvo').src = diaDaSemana.img;
 document.getElementById('mes').innerHTML = diaDaSemana.mes;
 document.getElementById('feira').innerHTML = diaDaSemana.feira;
