@@ -25,10 +25,15 @@ Para isso, acrescenta:
   * Se modificas o nome da imagem, modifica a variável polvo
 ```javascript
 /* Obtemos um objeto com a image, o dia e o mês a mostrar */
-function getDiaDaSemana(){
+function getDiaDaSemana(norma){
   /* Textos a mostrar */
-  var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro');
-  var feira = new Array('Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado');
+  if (norma==='agal'){
+    var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro');
+    var feira = new Array('Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado');
+  }else{
+    var mes = new Array('xaneiro', 'febreiro', 'marzo', 'abril', 'maio', 'juño', 'jullo', 'agosto', 'setembro', 'outubro', 'novembro', 'decembro');
+    var feira = new Array('Domingo', 'Segunda feira', 'Terza feira', 'Cuarta feira', 'Quinta feira', 'Sexta feira', 'Sábado');
+  }
 
   var path = "img/" /* path da imagem */
   var polvo = "polvo_violeta" /* raiz do nome da imagem */
@@ -53,7 +58,7 @@ function getDiaDaSemana(){
 
 /* Modifica o HTML com o obtido segundo o dia */
 function setDiaDaSemana(){
-  diaDaSemana=getDiaDaSemana();
+  diaDaSemana=getDiaDaSemana('ilga');
   $("#feira").html(diaDaSemana.feira);
   $("#mes").html(diaDaSemana.mes);
   $("#polvo").attr("src",diaDaSemana.img);
@@ -156,8 +161,13 @@ Para adicionarmos um widget com este código:
 /* Retorna a imagem a mostrar */
 function getDiaDaSemana(){
   /* Textos a mostrar */
-  var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro');
-  var feira = new Array('Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado');
+  if (norma==='agal'){
+    var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro');
+    var feira = new Array('Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado');
+  }else{
+    var mes = new Array('xaneiro', 'febreiro', 'marzo', 'abril', 'maio', 'juño', 'jullo', 'agosto', 'setembro', 'outubro', 'novembro', 'decembro');
+    var feira = new Array('Domingo', 'Segunda feira', 'Terza feira', 'Cuarta feira', 'Quinta feira', 'Sexta feira', 'Sábado');
+  }
 
   var path = "img/" /* path da imagem */
   var polvo = "polvo_violeta" /* raiz do nome da imagem */
@@ -179,7 +189,7 @@ function getDiaDaSemana(){
   this.mes = currentdate.getDate() + ' de ' + mes[currentdate.getMonth()]; /* 22 de fevereiro */
   return this;
 }
-diaDaSemana=getDiaDaSemana();
+diaDaSemana=getDiaDaSemana('ilga');
 document.getElementById('polvo').src = diaDaSemana.img;
 document.getElementById('mes').innerHTML = diaDaSemana.mes;
 document.getElementById('feira').innerHTML = diaDaSemana.feira;
