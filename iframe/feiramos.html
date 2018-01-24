@@ -66,16 +66,16 @@
 		  var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro');
 		  var feira = new Array('Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado');
 	  }else{
-		  var mes = new Array('xaneiro', 'febreiro', 'marzo', 'abril', 'maio', 'juño', 'jullo', 'agosto', 'septembro', 'outubro', 'novembro', 'decembro');
-		  var feira = new Array('Domingo', 'Segunda-feira', 'Terza-feira', 'Cuarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado');
+		  var mes = new Array('xaneiro', 'febreiro', 'marzo', 'abril', 'maio', 'juño', 'jullo', 'agosto', 'setembro', 'outubro', 'novembro', 'decembro');
+		  var feira = new Array('Domingo', 'Segunda feira', 'Terza feira', 'Cuarta feira', 'Quinta feira', 'Sexta feira', 'Sábado');
 	  }
-	
+
 	  var path = "img/" /* path da imagem */
 	  var polvo = "polvo_violeta" /* raiz do nome da imagem */
-	
+
 	  var currentdate = new Date(); /* obtemos a informaçom do dia de hoje */
 	  var diaDende0 = currentdate.getDay(); /* currentdate.getDay devolve 0: domingo, 1: segunda, ... 6 sábado */
-	
+
 	  switch (diaDende0){
 	    case 0: this.img=path+polvo+'_d.png';break;
 	    case 1: this.img=path+polvo+'_2.png';break;
@@ -85,14 +85,14 @@
 	    case 5: this.img=path+polvo+'_6.png';break;
 	    case 6: this.img=path+polvo+'_s.png';break;
 	  }
-	
+
 	  this.feira = feira[diaDende0]; /* Domingo, Segunda feira, ... */
 	  this.mes = currentdate.getDate() + ' de ' + mes[currentdate.getMonth()]; /* 22 de fevereiro */
 	  return this;
 	}
 	if (getParameterByName('agal')!==null) diaDaSemana=getDiaDaSemana("agal");
 	else if (getParameterByName('ilga')!==null) diaDaSemana=getDiaDaSemana("ilga");
-	else diaDaSemana=getDiaDaSemana("ilga"); /* Norma desconhecida, devolvemos ilga */
+	else diaDaSemana=getDiaDaSemana('ilga'); /* Norma desconhecida, devolvemos ilga */
 	document.getElementById('polvo').src = diaDaSemana.img;
 	document.getElementById('mes').innerHTML = diaDaSemana.mes;
 	document.getElementById('feira').innerHTML = diaDaSemana.feira;
