@@ -2,6 +2,18 @@ Campanha em colaboraçom com A Mesa na qual encorajamos as pessoas galegas a uti
 
 Aqui podes encontrar recursos para incluir o logo da campanha no teu blogue.
 
+# iframe
+A maneira mais simples é utilizares um iframe.
+
+Simplesmente cola na tua página o código:
+```html
+<iframe src="http://dias.pgl.gal/feiramos.html?agal" width="210px" height="210px" frameborder="0" scrolling="no"></iframe>
+```
+ou bem se queres que os textos no banner (dia/mês) sejam na norma RAG:
+```html
+<iframe src="http://dias.pgl.gal/feiramos.html?ilga" width="210px" height="210px" frameborder="0" scrolling="no"></iframe>
+```
+
 # html/js/css
 Podes incluir o polvo dinámico num simples &lt;div&gt; &lt;/div&gt; em qualquer página HTML.
 
@@ -9,7 +21,7 @@ Para isso, acrescenta:
 * O seguinte código HTML na tua página:
 ```html
 <div class="diaDaSemana">
-    <a href="http://feiramos.gal" target="_blank">
+    <a href="http://feirando.gal" target="_blank">
         <img class="DDSpolvo" id="polvo"/>
     </a>
     <div class="DDStextos">
@@ -116,7 +128,7 @@ Para adicionarmos um widget com este código:
 
 ```html
 <div class="diaDaSemana">
-    <a href="http://feiramos.gal" target="_blank">
+    <a href="http://feirando.gal" target="_blank">
         <img class="DDSpolvo" id="polvo"/>
     </a>
     <div class="DDStextos">
@@ -196,22 +208,6 @@ document.getElementById('feira').innerHTML = diaDaSemana.feira;
 //]]>
 </script>
 ```
-
-# iframe
-
-A alternativa mais simples é utilizar um iframe.
-
-Simplesmente cola na tua página o código:
-
-```html
-<iframe src="http://dias.pgl.gal/feiramos.html?ilga" width="210px" height="210px" frameborder="0" scrolling="no"></iframe>
-```
-ou bem se queres que os textos no banner (dia/mês) seja norma AGAL:
-
-```html
-<iframe src="http://dias.pgl.gal/feiramos.html?agal" width="210px" height="210px" frameborder="0" scrolling="no"></iframe>
-```
-
 # Informaçom sobre as questons de estilo
 
 ## Fonte
@@ -224,3 +220,4 @@ ou bem se queres que os textos no banner (dia/mês) seja norma AGAL:
 ## Violeta
 - Violeta suave: #e23e83
 - Violeta escuro: #8b0067
+
