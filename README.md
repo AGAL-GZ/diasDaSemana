@@ -1,9 +1,9 @@
 Campanha em colaboraçom com A Mesa na qual encorajamos as pessoas galegas a utilizarem os dias da semana por feiras.
 
-Aqui podes encontrar recursos para incluir o logo da campanha no teu blogue.
+Aqui podes encontrar recursos para inserires o logo da campanha no teu blogue.
 
 # iframe
-A maneira mais simples é utilizares um iframe.
+A maneira mais simples de pôr o polvinho é utilizares um iframe.
 
 Simplesmente cola na tua página o código:
 ```html
@@ -15,7 +15,7 @@ ou bem se queres que os textos no banner (dia/mês) sejam na norma RAG:
 ```
 
 # html/js/css
-Podes incluir o polvo dinámico num simples &lt;div&gt; &lt;/div&gt; em qualquer página HTML.
+Também podes fazê-lo incluindo o polvo dinámico num simples &lt;div&gt; &lt;/div&gt; em qualquer página HTML.
 
 Para isso, acrescenta:
 * O seguinte código HTML na tua página:
