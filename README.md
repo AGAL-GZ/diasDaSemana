@@ -111,7 +111,7 @@ function setDiaDaSemana(){
 }
 ```
 
-* Sobe as imagens png de img/ a algum sítio do teu servidor.
+* Sobe as imagens png de img/ a algum lugar do teu servidor.
 
 Simplesmente lembra-te de chamar na tua inicializaçom da página a funçom setDiaDaSemana()
 
@@ -122,7 +122,7 @@ Podes ver um exemplo do funcionamento em http://dias.pgl.gal
 # Wordpress com widgets
 
 Para adicionarmos um widget com este código:
-* Subimos as imagens a uma biblioteca de média.
+* Subimos as imagens à biblioteca de média do nosso wordpress.
 
 * Colamos num widget do tipo HTML o seguinte código
 
