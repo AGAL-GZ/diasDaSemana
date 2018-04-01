@@ -201,7 +201,7 @@ function getDiaDaSemana(norma){
   this.mes = currentdate.getDate() + ' de ' + mes[currentdate.getMonth()]; /* 22 de fevereiro */
   return this;
 }
-diaDaSemana=getDiaDaSemana('ilga'); // chamar com 'agal' para receber os textos em norma agal
+diaDaSemana=getDiaDaSemana('agal'); // escreve 'ilga' onde di 'agal' se queres mostrar os textos na norma ILG/RAG.
 document.getElementById('polvo').src = diaDaSemana.img;
 document.getElementById('mes').innerHTML = diaDaSemana.mes;
 document.getElementById('feira').innerHTML = diaDaSemana.feira;
