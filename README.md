@@ -177,7 +177,7 @@ function getDiaDaSemana(norma){
     var mes = new Array('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro');
     var feira = new Array('Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado');
   }else{
-    var mes = new Array('xaneiro', 'febreiro', 'marzo', 'abril', 'maio', 'juño', 'jullo', 'agosto', 'setembro', 'outubro', 'novembro', 'decembro');
+    var mes = new Array('xaneiro', 'febreiro', 'marzo', 'abril', 'maio', 'xuño', 'xullo', 'agosto', 'setembro', 'outubro', 'novembro', 'decembro');
     var feira = new Array('Domingo', 'Segunda feira', 'Terza feira', 'Cuarta feira', 'Quinta feira', 'Sexta feira', 'Sábado');
   }
 
